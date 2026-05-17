@@ -27,11 +27,14 @@ from dotenv import load_dotenv
 # .env / db.env 둘 다 시도
 load_dotenv()
 load_dotenv("db.env")
-# 배포 환경 대응 (Streamlit Cloud secrets → 환경변수 순으로 시도)
-import os
-_api_key = st.secrets.get("ANTHROPIC_API_KEY", None) if hasattr(st, "secrets") else None
-if _api_key:
-    os.environ["ANTHROPIC_API_KEY"] = _api_key
+
+# 배포(Streamlit Cloud) → st.secrets, 로컬 → .env 자동 분기
+try:
+    _api_key = st.secrets.get("ANTHROPIC_API_KEY", None)
+    if _api_key:
+        os.environ["ANTHROPIC_API_KEY"] = _api_key
+except Exception:
+    pass  # 로컬 환경에서는 .env에서 읽음
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from core.kg_query import create_matcher
@@ -105,10 +108,17 @@ with open(recipe_json_path, "r", encoding="utf-8") as f:
     _raw_recipe = json.load(f)
 
 # ── session_state 이중 구조 초기화 (정의서 3.3) ──
-if st.session_state["recipe_original"] is None:
+# JSON 파일 변경 시 캐시 무효화
+_json_mtime = os.path.getmtime(recipe_json_path)
+if (st.session_state["recipe_original"] is None
+        or st.session_state.get("_json_mtime") != _json_mtime):
     st.session_state["recipe_original"] = _raw_recipe
     st.session_state["recipe_current"] = copy.deepcopy(_raw_recipe)
     st.session_state["serving_count"] = _raw_recipe["base_servings"]
+    st.session_state["_json_mtime"] = _json_mtime
+    st.session_state["chat_history"] = []
+    st.session_state["modification_log"] = []
+    st.session_state["completed_steps"] = set()
 
 recipe_original: dict = st.session_state["recipe_original"]
 recipe_current: dict = st.session_state["recipe_current"]
