@@ -27,6 +27,11 @@ from dotenv import load_dotenv
 # .env / db.env 둘 다 시도
 load_dotenv()
 load_dotenv("db.env")
+# 배포 환경 대응 (Streamlit Cloud secrets → 환경변수 순으로 시도)
+import os
+_api_key = st.secrets.get("ANTHROPIC_API_KEY", None) if hasattr(st, "secrets") else None
+if _api_key:
+    os.environ["ANTHROPIC_API_KEY"] = _api_key
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from core.kg_query import create_matcher
