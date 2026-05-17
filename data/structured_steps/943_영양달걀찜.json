@@ -9,7 +9,11 @@
       "step_number": 1,
       "action": "썰다",
       "target": "죽순, 밤",
-      "detail": "죽순은 빗살 살려 썰기, 밤은 껍질 벗겨 4등분",
+      "ingredients": [
+        {"name": "죽순", "amount": 60, "unit": "g"},
+        {"name": "밤", "amount": 4, "unit": "개"}
+      ],
+      "detail": "죽순은 빗살 살려 썰고, 밤은 껍질을 벗겨 4등분해줍니다.",
       "heat_level": "없음",
       "end_condition": null,
       "estimated_time_min": 3,
@@ -20,40 +24,54 @@
       "step_number": 2,
       "action": "썰다",
       "target": "어묵, 표고버섯",
-      "detail": "찐 어묵 얇게 썰기, 표고버섯 미지근한 물에 불려 어슷 4등분",
+      "ingredients": [
+        {"name": "찐 어묵", "amount": 80, "unit": "g"},
+        {"name": "표고버섯(건)", "amount": 4, "unit": "개"}
+      ],
+      "detail": "찐 어묵은 얇게 썰고, 표고버섯은 미지근한 물에 충분히 불린 뒤 어슷 4등분해줍니다.",
       "heat_level": "없음",
       "end_condition": "표고버섯이 충분히 불을 때까지",
       "estimated_time_min": 3,
-      "technique_note": "표고버섯은 미지근한 물에 불려야 식감이 좋음. 뜨거운 물 사용 시 질겨짐",
+      "technique_note": "표고버섯은 미지근한 물에 불려야 식감이 좋아요. 뜨거운 물을 쓰면 질겨집니다.",
       "tools_used": ["도마", "칼"]
     },
     {
       "step_number": 3,
       "action": "섞다",
       "target": "달걀",
-      "detail": "달걀 풀고 달걀 부피 2.5배 멸치 육수 넣고 소금 간, 거품기로 풀어 체에 내리기",
+      "ingredients": [
+        {"name": "달걀", "amount": 6, "unit": "개"},
+        {"name": "멸치 육수", "amount": 375, "unit": "ml"},
+        {"name": "소금", "amount": 0.5, "unit": "작은술"}
+      ],
+      "detail": "달걀을 풀고 달걀 부피의 2.5배 분량의 멸치 육수를 넣어 소금으로 간한 뒤 거품기로 고루 풀어 체에 내려줍니다.",
       "heat_level": "없음",
       "end_condition": null,
       "estimated_time_min": 3,
-      "technique_note": "체에 내려야 기포가 제거되어 매끄러운 달걀찜이 됨. 육수 비율 2.5배가 부드러움의 핵심",
+      "technique_note": "체에 내려야 기포가 제거되어 매끄러운 달걀찜이 돼요. 육수 비율 2.5배가 부드러움의 핵심입니다.",
       "tools_used": ["그릇/볼", "계량스푼"]
     },
     {
       "step_number": 4,
       "action": "데치다",
       "target": "은행, 죽순, 밤, 새우",
-      "detail": "끓는 물에 은행, 죽순, 밤, 새우 순서로 데치기",
+      "ingredients": [
+        {"name": "은행", "amount": 12, "unit": "개"},
+        {"name": "새우(중)", "amount": 8, "unit": "마리"}
+      ],
+      "detail": "끓는 물에 은행·죽순·밤·새우 순서로 넣어 각각 살짝 데쳐줍니다.",
       "heat_level": "강",
       "end_condition": "각 재료가 살짝 익을 때까지",
       "estimated_time_min": 4,
-      "technique_note": "순서대로 넣는 이유: 익는 시간이 다르기 때문",
+      "technique_note": "순서대로 넣는 이유는 재료마다 익는 시간이 다르기 때문이에요.",
       "tools_used": ["냄비"]
     },
     {
       "step_number": 5,
       "action": "손질",
       "target": "은행, 새우",
-      "detail": "은행 껍질 벗기기, 새우 머리와 껍질 제거",
+      "ingredients": [],
+      "detail": "데친 은행의 껍질을 벗기고, 새우는 머리와 껍질을 제거해줍니다.",
       "heat_level": "없음",
       "end_condition": null,
       "estimated_time_min": 3,
@@ -64,11 +82,12 @@
       "step_number": 6,
       "action": "찌다",
       "target": "전체",
-      "detail": "찜 용기에 속 재료 담고 달걀물 부어 찜통에서 약 12분간 찌기",
+      "ingredients": [],
+      "detail": "찜 용기에 속 재료를 담고 달걀물을 부어 찜통에서 약 12분간 찝니다.",
       "heat_level": "중",
       "end_condition": "달걀물이 완전히 응고될 때까지",
       "estimated_time_min": 12,
-      "technique_note": "뚜껑을 살짝 열어두면 표면이 매끄럽게 익음. 강불이면 기포가 생겨 식감이 거칠어짐",
+      "technique_note": "뚜껑을 살짝 열어두면 표면이 매끄럽게 익어요. 강불이면 기포가 생겨 식감이 거칠어집니다.",
       "tools_used": ["찜기"]
     }
   ]

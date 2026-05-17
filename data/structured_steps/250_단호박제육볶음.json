@@ -9,62 +9,91 @@
       "step_number": 1,
       "action": "데치다",
       "target": "돼지고기",
-      "detail": "핏물 제거 후 된장육수에 살짝 데치기",
+      "ingredients": [
+        {"name": "돼지고기(목살 또는 앞다리)", "amount": 400, "unit": "g"},
+        {"name": "된장육수", "amount": 500, "unit": "ml"}
+      ],
+      "detail": "돼지고기의 핏물을 제거한 뒤 된장육수에 넣고 강불에서 겉면이 하얗게 익을 때까지 살짝 데쳐줍니다.",
       "heat_level": "강",
       "end_condition": "겉면이 하얗게 익을 때까지",
       "estimated_time_min": 5,
-      "technique_note": "된장육수로 데치면 잡내가 제거되고 감칠맛이 배어듦",
+      "technique_note": "된장육수로 데치면 잡내가 제거되고 감칠맛이 배어들어요.",
       "tools_used": ["냄비"]
     },
     {
       "step_number": 2,
       "action": "재우다",
       "target": "돼지고기",
-      "detail": "데친 돼지고기에 양념장(간장, 고추장, 고춧가루, 된장, 다진마늘) 넣고 재우기",
+      "ingredients": [
+        {"name": "간장", "amount": 2, "unit": "큰술"},
+        {"name": "고추장", "amount": 1, "unit": "큰술"},
+        {"name": "고춧가루", "amount": 1, "unit": "큰술"},
+        {"name": "된장", "amount": 0.5, "unit": "큰술"},
+        {"name": "다진 마늘", "amount": 1, "unit": "큰술"}
+      ],
+      "detail": "데친 돼지고기에 양념장 재료를 넣고 최소 10분 이상 재워줍니다.",
       "heat_level": "없음",
       "end_condition": null,
       "estimated_time_min": 10,
-      "technique_note": "최소 10분 이상 재워야 양념이 고기에 배어듦",
+      "technique_note": "최소 10분 이상 재워야 양념이 고기에 배어들어요.",
       "tools_used": ["그릇/볼"]
     },
     {
       "step_number": 3,
       "action": "썰다",
       "target": "단호박, 죽순, 양파, 대파, 표고버섯",
-      "detail": "단호박 도톰하게, 죽순·양파 채 썰기, 대파 어슷, 불린 표고버섯 먹기 좋게 썰기",
+      "ingredients": [
+        {"name": "단호박", "amount": 200, "unit": "g"},
+        {"name": "죽순", "amount": 80, "unit": "g"},
+        {"name": "양파", "amount": 1, "unit": "개"},
+        {"name": "대파", "amount": 1, "unit": "대"},
+        {"name": "표고버섯(불린 것)", "amount": 4, "unit": "개"}
+      ],
+      "detail": "단호박은 두께 0.5~0.7cm로 도톰하게, 죽순·양파는 채 썰기, 대파는 어슷썰기, 불린 표고버섯은 먹기 좋게 썰어줍니다.",
       "heat_level": "없음",
       "end_condition": null,
       "estimated_time_min": 7,
-      "technique_note": "단호박은 두께 0.5~0.7cm로 도톰하게 썰어야 볶을 때 부서지지 않음",
+      "technique_note": "단호박은 두께 0.5~0.7cm로 도톰하게 썰어야 볶을 때 부서지지 않아요.",
       "tools_used": ["도마", "칼"]
     },
     {
       "step_number": 4,
       "action": "볶다",
       "target": "돼지고기",
-      "detail": "올리브유 두른 팬에 재운 돼지고기와 된장육수(50g) 넣고 볶기",
+      "ingredients": [
+        {"name": "올리브유", "amount": 1, "unit": "큰술"},
+        {"name": "된장육수", "amount": 50, "unit": "ml"}
+      ],
+      "detail": "올리브유 두른 팬에 재운 돼지고기와 된장육수를 넣고 강불에서 반 정도 익을 때까지 볶아줍니다.",
       "heat_level": "강",
       "end_condition": "반 정도 익을 때까지",
       "estimated_time_min": 4,
-      "technique_note": "센 불에서 빠르게 볶아야 고기가 질겨지지 않음",
+      "technique_note": "센 불에서 빠르게 볶아야 고기가 질겨지지 않아요.",
       "tools_used": ["프라이팬"]
     },
     {
       "step_number": 5,
       "action": "볶다",
       "target": "단호박, 죽순, 양파, 대파, 표고버섯",
-      "detail": "반쯤 익은 고기에 야채와 다진 마늘 넣고 함께 볶기",
+      "ingredients": [
+        {"name": "다진 마늘", "amount": 1, "unit": "큰술"}
+      ],
+      "detail": "반쯤 익은 고기에 야채와 다진 마늘을 넣고 단호박이 익어 부드러워질 때까지 함께 볶아줍니다.",
       "heat_level": "중",
       "end_condition": "단호박이 익어 부드러워질 때까지",
       "estimated_time_min": 5,
-      "technique_note": "단호박이 먼저 익으니 너무 오래 볶으면 으깨질 수 있음",
+      "technique_note": "단호박이 먼저 익으니 너무 오래 볶으면 으깨질 수 있어요.",
       "tools_used": ["프라이팬"]
     },
     {
       "step_number": 6,
       "action": "마무리",
       "target": "전체",
-      "detail": "부순 참깨와 참기름 넣어 마무리",
+      "ingredients": [
+        {"name": "참깨", "amount": 1, "unit": "작은술"},
+        {"name": "참기름", "amount": 1, "unit": "작은술"}
+      ],
+      "detail": "부순 참깨와 참기름을 넣어 마무리합니다.",
       "heat_level": "약",
       "end_condition": null,
       "estimated_time_min": 1,

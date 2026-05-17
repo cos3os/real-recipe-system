@@ -9,55 +9,75 @@
       "step_number": 1,
       "action": "갈다",
       "target": "두부",
-      "detail": "쌀뜨물에 두부를 넣고 갈기",
+      "ingredients": [
+        {"name": "두부", "amount": 300, "unit": "g"},
+        {"name": "쌀뜨물", "amount": 500, "unit": "ml"}
+      ],
+      "detail": "두부를 4등분해 쌀뜨물과 함께 믹서기에 넣고 30초간 곱게 갈아줍니다. 완성된 두부물은 걸쭉한 크림 상태여야 해요.",
       "heat_level": "없음",
-      "end_condition": null,
+      "end_condition": "걸쭉한 크림 상태",
       "estimated_time_min": 2,
-      "technique_note": "쌀뜨물이 없으면 물로 대체 가능하나 국물 깊이가 줄어듦",
+      "technique_note": "두부를 갈면 국물에 자연스럽게 녹아들어 깊고 부드러운 베이스가 만들어져요. 덩어리가 남으면 한 번 더 갈아주세요.",
       "tools_used": ["믹서기"]
     },
     {
       "step_number": 2,
       "action": "썰다",
       "target": "돼지고기, 김치",
-      "detail": "돼지고기 썰기, 김치 3×3cm 썰기, 양념 제거",
+      "ingredients": [
+        {"name": "돼지고기(앞다리살 또는 삼겹살)", "amount": 150, "unit": "g"},
+        {"name": "묵은지", "amount": 200, "unit": "g"},
+        {"name": "청양고추", "amount": 2, "unit": "개"},
+        {"name": "홍고추", "amount": 1, "unit": "개"}
+      ],
+      "detail": "돼지고기를 한 입 크기(3×3cm)로 썰어줍니다. 묵은지는 3×3cm 크기로 썰고 흐르는 물에 가볍게 헹궈 양념을 절반 정도 제거해주세요. 청양고추·홍고추는 어슷썰기 합니다.",
       "heat_level": "없음",
       "end_condition": null,
       "estimated_time_min": 4,
-      "technique_note": "김치를 물에 씻어 양념을 제거해야 된장 맛이 살아남",
+      "technique_note": "김치 양념을 완전히 씻으면 신맛이 사라지니 절반만 헹구는 게 포인트예요. 묵은지일수록 깊은 맛이 납니다.",
       "tools_used": ["도마", "칼"]
     },
     {
       "step_number": 3,
       "action": "볶다",
       "target": "돼지고기, 김치",
-      "detail": "냄비에 돼지고기와 김치를 함께 볶기",
+      "ingredients": [],
+      "detail": "냄비에 기름 없이 돼지고기를 넣고 중불에서 1~2분간 먼저 볶아 기름을 뺍니다. 고기 겉면이 하얗게 익으면 김치를 넣고 함께 2분간 더 볶아주세요. 짙은 붉은 빛이 돌면 완성입니다.",
       "heat_level": "중",
-      "end_condition": "돼지고기 겉면이 익을 때까지",
+      "end_condition": "돼지고기 겉면이 익고 김치가 짙은 붉은 빛으로 변할 때까지",
       "estimated_time_min": 4,
-      "technique_note": "고기 기름이 나오면서 김치와 함께 볶아야 맛이 깊어짐",
+      "technique_note": "기름을 두르지 않아야 고기 자체 기름이 나오면서 김치와 자연스럽게 볶아져요. 이 과정이 국물 맛의 핵심입니다.",
       "tools_used": ["냄비"]
     },
     {
       "step_number": 4,
       "action": "끓이다",
-      "target": "전체",
-      "detail": "된장, 갈은 두부, 고춧가루, 청양고추, 홍고추 넣고 끓이기",
+      "target": "된장 국물",
+      "ingredients": [
+        {"name": "된장", "amount": 2, "unit": "큰술"},
+        {"name": "고춧가루", "amount": 1, "unit": "큰술"},
+        {"name": "다진 마늘", "amount": 1, "unit": "큰술"},
+        {"name": "물(추가)", "amount": 200, "unit": "ml"}
+      ],
+      "detail": "볶은 재료 위에 갈아둔 두부물을 붓고 필요시 물을 추가합니다. 된장을 체에 걸러 풀어 넣고 고춧가루·다진 마늘·청양고추·홍고추를 넣어주세요. 중불에서 끓어오르면 뚜껑을 열고 5분 이상 더 끓입니다.",
       "heat_level": "중",
-      "end_condition": "끓어오른 뒤 5분 이상",
+      "end_condition": "끓어오른 뒤 5분 이상, 국물이 진한 주황빛으로 변할 때",
       "estimated_time_min": 12,
-      "technique_note": "된장은 체에 걸러 넣어야 국물이 깔끔함",
-      "tools_used": ["냄비"]
+      "technique_note": "된장은 반드시 체에 걸러 넣어야 국물이 탁해지지 않고 깔끔해요. 뚜껑 열고 끓여야 잡내가 날아갑니다.",
+      "tools_used": ["냄비", "체"]
     },
     {
       "step_number": 5,
       "action": "마무리",
       "target": "대파",
-      "detail": "대파 넣고 한소끔 끓여 완성",
+      "ingredients": [
+        {"name": "대파", "amount": 1, "unit": "대"}
+      ],
+      "detail": "대파를 어슷썰기해 넣고 약불에서 30초~1분간 한소끔 더 끓여 완성합니다. 간을 보고 싱거우면 된장이나 국간장으로 조절하세요.",
       "heat_level": "약",
-      "end_condition": null,
+      "end_condition": "대파가 살짝 숨이 죽으면 완성",
       "estimated_time_min": 1,
-      "technique_note": "대파는 마지막에 넣어야 향이 날아가지 않음",
+      "technique_note": "대파는 맨 마지막에 넣어야 향이 살아있어요. 너무 오래 끓이면 풋내 없이 단맛만 남습니다.",
       "tools_used": ["냄비"]
     }
   ]

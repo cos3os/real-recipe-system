@@ -9,7 +9,10 @@
       "step_number": 1,
       "action": "썰다",
       "target": "팽이버섯",
-      "detail": "밑동 제거 후 4cm 길이로 자르기",
+      "ingredients": [
+        {"name": "팽이버섯", "amount": 200, "unit": "g"}
+      ],
+      "detail": "팽이버섯의 밑동을 제거한 뒤 4cm 길이로 잘라줍니다.",
       "heat_level": "없음",
       "end_condition": null,
       "estimated_time_min": 1,
@@ -20,7 +23,10 @@
       "step_number": 2,
       "action": "썰다",
       "target": "청경채",
-      "detail": "겉잎 떼어내고 반으로 갈라 4cm 길이로 자르기",
+      "ingredients": [
+        {"name": "청경채", "amount": 200, "unit": "g"}
+      ],
+      "detail": "청경채는 겉잎을 떼어내고 반으로 갈라 4cm 길이로 잘라줍니다.",
       "heat_level": "없음",
       "end_condition": null,
       "estimated_time_min": 2,
@@ -31,40 +37,56 @@
       "step_number": 3,
       "action": "데치다",
       "target": "팽이버섯, 청경채",
-      "detail": "끓는 물에 데치기",
+      "ingredients": [
+        {"name": "물", "amount": 1000, "unit": "ml"}
+      ],
+      "detail": "끓는 물에 팽이버섯과 청경채를 넣고 숨이 살짝 죽을 때까지 30초~1분간 데쳐줍니다.",
       "heat_level": "강",
       "end_condition": "숨이 살짝 죽을 때까지",
       "estimated_time_min": 1,
-      "technique_note": "오래 데치면 물러지므로 30초~1분이면 충분",
+      "technique_note": "오래 데치면 물러지므로 30초~1분이면 충분해요.",
       "tools_used": ["냄비"]
     },
     {
       "step_number": 4,
       "action": "볶다",
       "target": "팽이버섯, 청경채",
-      "detail": "기름 두른 팬에 데친 재료 볶기",
+      "ingredients": [
+        {"name": "식용유", "amount": 1, "unit": "큰술"},
+        {"name": "다진 마늘", "amount": 1, "unit": "작은술"},
+        {"name": "굴소스", "amount": 1, "unit": "큰술"},
+        {"name": "소금", "amount": 0.3, "unit": "작은술"}
+      ],
+      "detail": "식용유를 두른 팬에 다진 마늘을 볶다가 데친 재료를 넣고 강불에서 기름이 고루 코팅될 때까지 빠르게 볶아줍니다.",
       "heat_level": "강",
       "end_condition": "기름이 고루 코팅될 때까지",
       "estimated_time_min": 3,
-      "technique_note": "센 불에서 빠르게 볶아야 야채가 물러지지 않음",
+      "technique_note": "센 불에서 빠르게 볶아야 야채가 물러지지 않아요.",
       "tools_used": ["프라이팬"]
     },
     {
       "step_number": 5,
       "action": "섞다",
       "target": "전체",
-      "detail": "물 전분 넣어 농도 맞추기",
+      "ingredients": [
+        {"name": "녹말", "amount": 1, "unit": "큰술"},
+        {"name": "물", "amount": 2, "unit": "큰술"}
+      ],
+      "detail": "녹말과 물을 섞은 물 전분을 조금씩 넣으며 소스가 걸쭉해질 때까지 농도를 맞춰줍니다.",
       "heat_level": "중",
       "end_condition": "소스가 걸쭉해질 때까지",
       "estimated_time_min": 1,
-      "technique_note": "물 전분은 조금씩 넣으며 농도 조절. 한 번에 넣으면 덩어리짐",
+      "technique_note": "물 전분은 조금씩 넣으며 농도 조절하세요. 한 번에 넣으면 덩어리집니다.",
       "tools_used": ["프라이팬"]
     },
     {
       "step_number": 6,
       "action": "마무리",
       "target": "전체",
-      "detail": "참기름 뿌려 완성",
+      "ingredients": [
+        {"name": "참기름", "amount": 1, "unit": "작은술"}
+      ],
+      "detail": "참기름을 뿌려 완성합니다.",
       "heat_level": "없음",
       "end_condition": null,
       "estimated_time_min": 0.5,
